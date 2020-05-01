@@ -1,0 +1,171 @@
+body{
+    margin: 1px;;
+}
+.main{
+    margin: 0px ;
+    padding:1px;
+    background-color: rgb(223, 223, 223);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    color:rgb(0, 0, 0);
+
+}
+#header{
+    background-color: white;
+    height:30px;
+    color:black;
+    margin: 0px;
+    border-radius: 1px;
+    padding: 10px;
+    font-size: small;
+}
+#header p{
+   
+    float: right;
+    height: 0px;
+    padding-right: 10px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(50%);
+}
+#header a{
+    height: 25px;
+    top: auto;
+    margin-bottom: auto;
+    float: right;
+
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(50%);
+}
+.loginBox{
+   position: absolute;
+    width: 600px;
+    height:420px;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   margin: auto;
+   padding: 25px;
+   border-radius: 5px;
+   background-color:white;
+   border: grey solid 2px;
+  
+}
+
+.imageContainer{
+    width: 300px;
+    background-color: white;
+    height:420px;
+    float: right;
+    border-radius: 5px;
+    border: rgb(197, 195, 195) solid 2px;
+}
+.imageContainer img{
+    width:280px;
+    height:400px;
+    margin: 10px;
+}
+.loginBox h1{
+    background-color: orange;
+    margin: 10px;
+    padding: 15px;
+    margin-bottom: 60px;
+    
+    border-radius: 15px;
+    width: 200px;
+}
+ 
+
+
+
+ input{
+    width: 260px;
+    margin-bottom: 20px;
+   
+    
+}
+
+ input[type="text"] ,input[type="password"]
+{
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px black solid;
+   
+    color:black;
+}
+input[type="submit"]
+{
+    border:none;
+    outline: none;
+    background-color: rgb(255, 166, 0);
+    border-bottom: 1px red solid;
+    width:100px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: linear 0.2s;
+}
+input[type="submit"]:hover
+{
+    background-color: rgb(255, 181, 8);
+    cursor:pointer;
+    transform: scale(1.05);
+}
+p{
+    margin-bottom: 5px;
+}
+ a{
+    text-decoration: none;
+}
+a:hover{
+    color:orange;
+}
+
+
+
+
+p.footer{
+    text-align: center;
+    font-size: small;
+}
+
+
+/*============================MODAL=======================*/
+.bgModal{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0,0.7);/*opacity*/
+    
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+   
+}
+.modalContent{
+    width: 300px;
+    height:500px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    
+}
+.modalContent h1{
+    text-align: center;
+}
+.modalContent .close{
+    position: absolute;
+    top: 0 ;
+    right:14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
